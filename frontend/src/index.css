@@ -2,33 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Chat container */
 .str-chat__channel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #c9e8c9, #b7e7bb);
-    height: 100%;
-  }
-  
-  .str-chat__container {
-    max-width: 1200px;
-    width: 100%;
-    height: 80% !important;
-    margin: 0 auto !important;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-  }
-  
-  .str-chat__list {
-    background-color: #ffffff;
-    padding: 12px;
-  }
-  
-  .str-chat__list-notifications {
-    display: none;
-  }
-  
-  .str-chat__message-input {
-    border-top: 1px solid #ddd;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(135deg, #f3f4f6, #dbeafe, #bfdbfe);
+  /* Subtle pastel blue gradient */
+}
+
+/* Chat box */
+.str-chat__container {
+  max-width: 1200px;
+  width: 100%;
+  height: 80% !important;
+  margin: 0 auto !important;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Chat message list */
+.str-chat__list {
+  background: linear-gradient(to bottom, #ffffff, #f1f5f9);
+  padding: 16px;
+}
+
+/* Hide notifications */
+.str-chat__list-notifications {
+  display: none;
+}
+
+/* Input area */
+.str-chat__message-input {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
