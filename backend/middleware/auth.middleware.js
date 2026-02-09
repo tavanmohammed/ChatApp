@@ -6,30 +6,26 @@ export const protectRoute = async (req, res, next) => {
     const token = req.cookies.jwt;
 
     if (!token) {
-      return res.status(401).json({ message: "Not authorized, token missing" });
+      return res.status(401).json({ message: "Unauthorized - No token provided" });
     }
-
-        //  Assign decoded result
 
     const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
 
-    //  Validate decoded content
-    if (!decoded || !decoded.userId) {
-      return res.status(401).json({ message: "Invalid token" });
+    if (!decoded) {
+      return res.status(401).json({ message: "Unauthorized - Invalid token" });
     }
 
-    // ✅ Find user and attach to request
     const user = await User.findById(decoded.userId).select("-password");
+
     if (!user) {
-      return res.status(401).json({ message: "User not found" });
+      return res.status(401).json({ message: "Unauthorized - User not found" });
     }
 
     req.user = user;
+
     next();
   } catch (error) {
-    console.error("Error in protectRoute middleware:", error);
-    return res.status(500).json({ message: "Internal Server Error (auth)" });
+    console.log("Error in protectRoute middleware", error);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 };
-
-export default protectRoute;
