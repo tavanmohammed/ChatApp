@@ -200,13 +200,6 @@ npm run dev
 npm run build
 ```
 
-<img width="1440" height="900" alt="Screenshot 2026-02-08 at 6 44 45 PM" src="https://github.com/user-attachments/assets/bf6be985-445e-408a-baf4-37fa3760eacd" />
-
-<img width="1440" height="900" alt="Screenshot 2026-02-08 at 6 45 09 PM" src="https://github.com/user-attachments/assets/6770ab8e-883e-440c-90f6-c5ad8a976d6b" />
-<img width="1440" height="900" alt="Screenshot 2026-02-08 at 6 45 18 PM" src="https://github.com/user-attachments/assets/f3ec9d3a-7489-40d3-9cdc-9a5280e6ede4" />
-<img width="1440" height="900" alt="Screenshot 2026-02-08 at 6 50 36 PM" src="https://github.com/user-attachments/assets/90ae13e4-fe2d-445f-b3bd-93e5dd49cdd7" />
-<img width="1372" height="756" alt="Screenshot 2026-02-08 at 6 50 58 PM" src="https://github.com/user-attachments/assets/37bf44ee-34d2-430f-a969-b22642510a36" />
-
 <img width="1369" height="769" alt="Screenshot 2026-02-08 at 6 51 21 PM" src="https://github.com/user-attachments/assets/0b86fb3e-bda7-4f3a-b139-17aaa7bf3222" />
 <img width="1431" height="773" alt="Screenshot 2026-02-08 at 6 51 35 PM" src="https://github.com/user-attachments/assets/e7ba44db-0abf-4194-865b-09e12ea5b83c" />
 
