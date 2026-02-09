@@ -1,11 +1,3 @@
-Got it 👍
-Here’s an **updated README** that **explicitly includes**:
-
-* 🎨 Theme switching
-* 🎥 Video calls
-* 🧑‍🎨 Generated avatars
-
-You can **replace your current README** with this version.
 
 ---
 
